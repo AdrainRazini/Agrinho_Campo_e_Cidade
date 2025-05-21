@@ -4,22 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrinho Campo e Cidade</title>
+     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
 <body>
-<header>
-<nav>
-    <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#tema">Tema</a></li>
-    </ul>
-</nav>
-</header>
+ <header>
+        <nav>
+            <div class="logo">Campo e Cidade</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="#tema"><i class="fas fa-folder-open"></i> Tema</a></li>
+                <li><a href="#conclusao"><i class="fas fa-users"></i> Conclusão</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><i class="modo-escuro fas fa-moon" onclick="toggleModo()"></i></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div>
-        <p>Campo e Cidade</p>
+<main class="container"> 
+
+    <div class="projeto" id="home">
+       <h1>Campo E Cidade</h1>
         <img src="image/image.png" alt="Campo X Cidade">
+
+        <ul>
+                <button class="box-inf" onclick="openModal(
+                'Foto Do Campo e Cidade 📝', 
+                'O Campo ', 
+                'image/image.png', 
+                'projeto.html', 
+                '📌 O Campo'
+            )">
+                Saiba mais
+            </button>
+        </ul>
     </div>
-    
+ 
+
+<section class="projeto id="tema">
+<h2>Olá </h2>
+<p>Olá</p>
+</section>
+
+<section class="projeto" id="sobre">
+<h3>Olá</h3>
+</section>
+
+<section class="projeto" id="conclusao">
+<h3>Olá</h3>
+</section>
+
+</main>
+
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="imgcub" id="modal-img" src="image/" alt="Imagem do Projeto">
+        <h2 id="modal-title">Título do Projeto</h2>
+        <p id="modal-description">Descrição do Projeto</p>
+        <p id="modal-extra" style="display: none; font-style: italic;"></p> <!-- Texto extra -->
+        <a class="box-inf" id="modal-link" href="" target="_blank">
+            <i class="fas fa-search"></i> Acessar Projeto
+        </a>
+    </div>
+</div>
+
+<footer id="contato">
+
+     
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/adrian-razini-rangel-07393b2b8/?originalSubdomain=br" aria-label="LinkedIn Adrian Razini Rangel">
+                    <i class="fab fa-linkedin box-hd"></i>
+                </a>
+                <a href="https://github.com/AdrainRazini" aria-label="GitHub Adrian Razini">
+                    <i class="fab fa-github box-hd"></i>
+                </a>
+                <a href="https://www.instagram.com/adrian75556435/" aria-label="Instagram Adrian Razini">
+                    <i class="fab fa-instagram box-hd"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=554196638056&text=Olá!" aria-label="WhatsApp Adrian Razini">
+                    <i class="fab fa-whatsapp box-hd"></i>
+                </a>
+            </div>
+<p>@Adrian Razini Rangel </p>
+</footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function toggleModo() {
+            document.body.classList.toggle("dark-mode");
+            let icon = document.querySelector(".modo-escuro");
+            icon.classList.toggle("fa-sun");
+            icon.classList.toggle("fa-moon");
+        }
+
+        function openModal(title, description, img, link, extraText = "") {
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-description").innerText = description;
+    document.getElementById("modal-img").src = img;
+    document.getElementById("modal-link").href = link;
+
+    let extraElement = document.getElementById("modal-extra");
+
+    if (extraText.trim() !== "") {
+        extraElement.innerText = extraText;
+        extraElement.style.display = "block";
+    } else {
+        extraElement.style.display = "none";
+    }
+
+    document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+
+        gsap.from(".menu ul li", { opacity: 0, y: -50, duration: 1, stagger: 0.2 });
+        gsap.from(".btn", { opacity: 0, scale: 0.5, duration: 1, stagger: 0.3 });
+    </script>
+
 </body>
 </html>
