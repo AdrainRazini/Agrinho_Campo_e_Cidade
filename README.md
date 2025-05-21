@@ -8,7 +8,7 @@ Olá a Todos 👋
 ## 📂 Estrutura do Projeto
 
 ```
-site-central/
+Agrinho_Campo_e_Cidade/
 │-- public/
 │   │-- index.html
 │   │-- css/
