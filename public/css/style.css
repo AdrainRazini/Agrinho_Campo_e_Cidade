@@ -1,9 +1,8 @@
 /*=======================================*/
-/*           Inicio do projeto           */
-/* Reset básico e configurações iniciais */
+/*       <== Inicio do projeto ==>       */
 /*=======================================*/
 
-
+/* Reset básico e configurações iniciais */
 * {
     margin: 0;
     padding: 0;
@@ -311,3 +310,14 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
 .box-inf:hover {
     background: #1976d2;
 }
+
+
+/*
+
+ █████  ██████  ██████  ██  █████  ███    ██ 
+██   ██ ██   ██ ██   ██ ██ ██   ██ ████   ██ 
+███████ ██   ██ ██████  ██ ███████ ██ ██  ██ 
+██   ██ ██   ██ ██   ██ ██ ██   ██ ██  ██ ██ 
+██   ██ ██████  ██   ██ ██ ██   ██ ██   ████ 
+
+*/
