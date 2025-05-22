@@ -267,10 +267,9 @@ strong {
     color: #fbc02d;
 }
 
-
 /* Modal Overlay */
 #modal {
-    display: none; /* escondido por padrão */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -280,15 +279,19 @@ strong {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    padding: 20px; /* adiciona espaço interno nas laterais para telas pequenas */
+    box-sizing: border-box;
 }
 
 /* Conteúdo do Modal */
 .modal-content {
-    background: var(--box-bg, #1e1e1e); /* fallback caso não tenha variável */
+    background: var(--box-bg, #1e1e1e);
     padding: 30px 20px;
     border-radius: 12px;
-    width: 90%;
+    width: 100%;
     max-width: 500px;
+    max-height: 90vh; /* limita a altura para caber na tela */
+    overflow-y: auto; /* adiciona rolagem vertical quando necessário */
     text-align: center;
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -309,6 +312,7 @@ strong {
 .close:hover {
     color: #f44336;
 }
+
 
 /* Imagem */
 .imgcub {
