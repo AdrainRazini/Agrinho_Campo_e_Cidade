@@ -54,18 +54,83 @@
         </section>
 
 </div>
+<button class="box-inf" onclick="openModal(
+    '🌾 Referências 🏙️', 
+    'Referências usadas no site', 
+    'image/image.png', 
+    'referencias.html', 
+    '📌 Saiba mais sobre essa parceria no Agrinho 2025'
+)">
+    Saiba mais
+</button>
 
        
     </main>
 
+
+
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="imgcub" id="modal-img" src="image/" alt="Imagem do Projeto">
+        <h2 id="modal-title">Título do Projeto</h2>
+        <p id="modal-description">Descrição do Projeto</p>
+        <p id="modal-extra" style="display: none; font-style: italic;"></p> <!-- Texto extra -->
+        <a class="box-inf" id="modal-link" href="" target="_blank">
+            <i class="fas fa-search"></i> Acessar Projeto
+        </a>
+    </div>
+</div>
+
     <footer>
         <p>&copy; 2025 Projeto Agrinho – Campo e Cidade</p>
     </footer>
-
+<script type="module" src="js/script.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
     </script>
+<script>
+    
+AOS.init();
 
+function toggleModo() {
+    document.body.classList.toggle("dark-mode");
+    let icon = document.querySelector(".modo-escuro");
+    icon.classList.toggle("fa-sun");
+    icon.classList.toggle("fa-moon");
+}
+
+function openModal(title, description, img, link, extraText = "") {
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-description").innerText = description;
+    document.getElementById("modal-img").src = img;
+    document.getElementById("modal-link").href = link;
+
+    let extraElement = document.getElementById("modal-extra");
+
+    if (extraText.trim() !== "") {
+        extraElement.innerText = extraText;
+        extraElement.style.display = "block";
+    } else {
+        extraElement.style.display = "none";
+    }
+
+    document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+
+gsap.from(".menu ul li", { opacity: 0, y: -50, duration: 1, stagger: 0.2 });
+gsap.from(".btn", { opacity: 0, scale: 0.5, duration: 1, stagger: 0.3 });
+
+</script>
 </body>
 </html>

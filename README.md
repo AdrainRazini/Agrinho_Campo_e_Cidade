@@ -33,6 +33,7 @@ Agrinho_Campo_e_Cidade/
 │   │-- index.html
 │   │-- projeto.html
 │   │-- referencias.html
+│   │-- 404.html
 │   │-- css/
 │   │-- js/
 │   │-- image/
