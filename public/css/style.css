@@ -231,7 +231,7 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
 }
 
 .projeto:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
 }
 
 /* Títulos e parágrafos */
