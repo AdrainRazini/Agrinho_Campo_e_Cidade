@@ -1,31 +1,36 @@
-# 🌾 Agrinho: Campo e Cidade
+# 🌾 Agrinho 2025: Campo e Cidade
 
-Olá a todos 👋
+Olá a todos! 👋  
+Seja bem-vindo ao repositório do projeto **Agrinho 2025 – Campo e Cidade**!
 
 ---
 
-## 🧠 Objetivo
+## 🎯 Objetivo
 
-Este projeto foi desenvolvido para participação no **Projeto Agrinho**, com os seguintes objetivos:
+Este projeto foi desenvolvido para participação no **Projeto Agrinho 2025**, com os seguintes propósitos:
 
-- Explorar e descrever as diferenças entre o **Campo** e a **Cidade**;
-- **Criar um super site** informativo e interativo;
-- Observar e demonstrar como funciona a integração entre tecnologias web modernas.
+- Explorar e descrever as diferenças entre o **campo** e a **cidade**;
+- Desenvolver um **site interativo** e **educativo** sobre o tema;
+- Demonstrar a integração de **tecnologias web modernas**;
+- Aprimorar habilidades de programação e design web.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-| Tecnologias | |
-|-------------|--|
-| ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white) | ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) |
+| Front-End | Back-End |
+|-----------|----------|
+| ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white) | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) |
+| ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) |  |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |  |
+
+> Também utilizei as bibliotecas como [GSAP](https://greensock.com/gsap/), [AOS](https://michalsnik.github.io/aos/), e [Font Awesome](https://fontawesome.com/) para animações e ícones.
 
 ---
 
----
+## 📁 Estrutura do Projeto
 
-## 📂 Estrutura do Projeto
+
 
 ```
 Agrinho_Campo_e_Cidade/
