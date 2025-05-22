@@ -212,24 +212,43 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
 
 /* projetos */
 
+/* Grade dos projetos */
 .projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding-top: 20px;
 }
+
+/* Bloco individual */
 .projeto {
-    background: var(--box-bg);
+    background-color: rgba(249, 249, 249, 0.95); /* fundo levemente opaco para legibilidade */
+    border: 1px solid #ccc;
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
 }
-.projeto {
-    background-color: #f9f9f91c;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding: 20px;
+
+.projeto:hover {
+    transform: translateY(-5px);
 }
+
+/* Títulos e parágrafos */
+.projeto h2 {
+    margin-top: 0;
+    color: #1d3557;
+}
+
+.projeto p {
+    line-height: 1.6;
+    color: #333;
+}
+
+strong {
+    color: #2a9d8f;
+}
+
 .projeto button {
     background: #007bff;
     color: white;
