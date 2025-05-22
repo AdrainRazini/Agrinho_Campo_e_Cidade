@@ -31,6 +31,8 @@ Este projeto foi desenvolvido para participação no **Projeto Agrinho**, com os
 Agrinho_Campo_e_Cidade/
 │-- public/
 │   │-- index.html
+│   │-- projeto.html
+│   │-- referencias.html
 │   │-- css/
 │   │-- js/
 │   │-- image/
