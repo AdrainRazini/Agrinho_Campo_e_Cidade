@@ -36,6 +36,7 @@ Agrinho_Campo_e_Cidade/
 │   │-- css/
 │   │-- js/
 │   │-- image/
+│   │   │-- favicon/
 │   
 │-- readme.md
 │-- package.json
