@@ -15,7 +15,7 @@
 :root {
     --bg-color: #f0f4f8;       /* Cor de fundo clara, suave para leituras */
     --text-color: #222;        /* Texto escuro para contraste */
-    --box-bg: #ffffff;         /* Caixas brancas para destaque */
+    --box-bg:rgba(249, 249, 249, 0.95); /* fundo levemente opaco para legibilidade */   
     --header-bg: #4a90e2;      /* Cor de cabeçalho com tom azul vibrante */
     --footer-bg: #4a90e2;
     --marcador: #e94e77;       /* Cor marcadora com tom rosado vibrante */
@@ -222,8 +222,8 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
 
 /* Bloco individual */
 .projeto {
-    background-color: rgba(249, 249, 249, 0.95); /* fundo levemente opaco para legibilidade */
-    border: 1px solid #ccc;
+    background-color:  var(--box-bg);
+    border: 1px solid var(--text-color);
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -242,7 +242,7 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
 
 .projeto p {
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
 }
 
 strong {
